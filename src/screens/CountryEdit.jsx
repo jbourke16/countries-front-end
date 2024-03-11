@@ -9,7 +9,7 @@ function CountryEdit() {
         region: "",
         population: "",
         flag: "",
-        primaryLanguage: ""
+        primaryLanguage: "",
     });
 
     let { id } = useParams;
@@ -40,15 +40,6 @@ function CountryEdit() {
         }));
     };
 
-    const handleCheckboxChange = (e) => {
-        const { name, checked } = e.target;
-
-        setCountry((prevCountry) => ({
-            ...prevCountry,
-            [name]: checked,
-        }));
-    };
-
     return (
         <div>
             <h1>Update a Country in our Database!</h1>
@@ -58,42 +49,42 @@ function CountryEdit() {
                     type="text"
                     placeholder="Edit country name"
                     name="country"
-                    value={country.name}
+                    value={country?.name}
                     onChange={handleChange}
                 />
                 <input 
                     type="text"
                     placeholder="Edit country capital"
                     name="capital"
-                    value={country.capital}
+                    value={country?.capital}
                     onChange={handleChange}
                 />
                 <input
                     type="text"
                     placeholder="Edit country region"
                     name="region"
-                    value={country.region}
+                    value={country?.region}
                     onChange={handleChange}
                 />
                 <input 
                     type="text"
                     placeholder="Edit population size"
                     name="population"
-                    value={country.population}
-                    onChange={country.population}
+                    value={country?.population}
+                    onChange={handleChange}
                 />
                 <input
                     type="text"
                     placeholder="Edit flag"
                     name="flag"
-                    value={country.flag}
-                    onChange={country.flag}
+                    value={country?.flag}
+                    onChange={handleChange}
                 />
                 <input 
                     type="text"
                     placeholder="Edit primary language"
                     name="primaryLanguage"
-                    value={country.primaryLanguage}
+                    value={country?.primaryLanguage}
                     onChange={handleChange}
                 />
             </form>
