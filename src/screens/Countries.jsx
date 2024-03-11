@@ -1,19 +1,7 @@
-import { useState, useEffect } from 'react';
-import { getCountries } from '../services/countries.js';
 import Country from '../components/Country.jsx';
 
-function Countries() {
-    const [countries, setCountries] = useState([])
-
-    async function fetchCountries() {
-        const allCountries = await getCountries();
-        console.log(countries)
-        setCountries(allCountries);
-    };
-
-    useEffect(() => {
-        fetchCountries()
-    }, [])
+function Countries({countries}) {
+    
 
     return (
         <div>
