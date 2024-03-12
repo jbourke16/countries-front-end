@@ -24,13 +24,13 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
-        <Routes>
-          <Route path='/' element={<Home countries={countries}/>} />
-          <Route path='/countries' element={<Countries countries={countries}/>} />
-          <Route path='/countries/:id' element={<CountryDetail />} />
-          <Route path='/add-country' element={<CountryCreate />} />
-          <Route path='/countries/:id/edit' element={<CountryEdit />} />
+        <Nav />
+          <Routes>
+            <Route path='/' element={<Home countries={countries}/>} />
+            <Route path='/countries' element={<Countries countries={countries}/>} />
+            <Route path='/countries/:id' element={<CountryDetail />} />
+            <Route path='/add-country' element={<CountryCreate />} />
+            <Route path='/countries/:id/edit' element={<CountryEdit />} />
         </Routes>
     </div>
   );

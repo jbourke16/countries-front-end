@@ -23,7 +23,7 @@ function CountryDetail() {
     }
 
     return (
-        <div>
+        <div className="country-details">
             <h1>{country.name}</h1>
             <p>Capital: {country.capital}</p>
             <p>Region: {country.region}</p>

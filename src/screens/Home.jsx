@@ -14,12 +14,16 @@ function Home({countries}) {
     }
 
     return (
-        <div>
-            <h1 className="home">Welcome to the Country Database</h1>
-            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
-            <button onClick={handleClick}>Find Country</button>
+        <div className="homepage">
+            <h1 className="home">Welcome to CountryDB</h1>
+            <p>The database that holds every country, capital, and region!</p>
 
-            <div>
+            <div className="search-bar">
+            <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
+            <button className="find-country" onClick={handleClick}>Find Country</button>
+            </div>
+
+            <div className="results-container">
                 {
                     searchedCountries?.map((country) => (
                         <Country country={country} key={country._id} />

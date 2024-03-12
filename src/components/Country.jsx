@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Country({ country }) {
     return (
-        <div>
+        <div className="country-container">
             <Link to={`/countries/${country._id}`}>
                 <h3>{country.name}</h3>
                 <p>{country.capital}</p>

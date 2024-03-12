@@ -1,3 +1,95 @@
+@import url('https://fonts.cdnfonts.com/css/viridian-college');
+
 .App {
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,76,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+    justify-content: row;
+    justify-content: center;
+    list-style: none;
+    font-family: 'Viridian College', sans-serif;
+}
+
+.nav-menu ul li a {
+    margin: 20px 50px;
+    padding: auto;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu ul li a:hover {
+    color: black;
+}
+
+nav {
+    padding: 20px 10px;
+}
+
+.home {
+    font-family: 'Viridian College', sans-serif;
+    font-size: 24px;
+    margin: 30px 0px;
+}
+
+.homepage p {
+    font-family: 'Viridian College', sans-serif;
+    font-size: 15px;
+}
+
+.find-country {
+    font-family: 'Viridian College', sans-serif;
+    font-size: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.country-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+.create-country-btn {
+    margin-top: 10px;
+    width: 250px;
+    margin: auto;
+}
+
+.country-container {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    border: 1px solid black;
+    align-content: center;
+    margin: auto;
+}
+
+.results-container {
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    display: grid;
+    align-items: center;
+}
+
+.country-details {
+    border: 2px solid rgba(4, 10, 11, 0.08);
+    font-family: 'Viridian College', sans-serif;
 }
