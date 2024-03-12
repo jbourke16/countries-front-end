@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# CountryDB
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to CountryDB, the database that holds every country! Each country includes it's capital, region, population, flag and primary language.
 
-## Available Scripts
+You can even edit, add, and delete countries if you desire. This read me will show you the ins and outs of CountryDB.
 
-In the project directory, you can run:
+## Finding a Country
 
-### `npm start`
+<img src="CountryDBMain.png" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To find a country, type it into the search box and click "Find Country". If you do an exact search, one country exactly matching your query will pop up.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+If you type in part of a country name, and more than one country broadly matches that name, you'll get multiple results. For example, simply typing "republic" in the box will return all countries with the name "republic" in the title.
 
-### `npm test`
+## Adding a Country
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+All countries are in the database, but feel free to add another country if you'd like! A new country could be forming this very second and you may be the only person who knows. 
 
-### `npm run build`
+To add a country:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<ul>
+    <li>Navigate to the "Add Country" page.</li>
+    <li>Enter the country's info: country name, capital, region, population, flag (emoji), and primary language.</li>
+    <li>Click the "Create Country" button on the buttom of the form.</li>
+    <li>The country should then be added to the database!</li>
+</ul>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Here's an example below:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="" />

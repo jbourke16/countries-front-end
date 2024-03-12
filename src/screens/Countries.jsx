@@ -1,6 +1,6 @@
 import Country from '../components/Country.jsx';
 
-function Countries({countries}) {
+function Countries({ countries }) {
     
 
     return (
