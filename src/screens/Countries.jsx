@@ -4,7 +4,7 @@ function Countries({countries}) {
     
 
     return (
-        <div>
+        <div className="all-countries">
             <h1>All Countries</h1>
 
             <div className="countries-container">

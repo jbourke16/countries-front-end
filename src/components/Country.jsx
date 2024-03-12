@@ -9,7 +9,7 @@ function Country({ country }) {
                 <p>{country.region}</p>
                 <p>{country.population}</p>
                 <p>{country.primaryLanguage}</p>
-                <p>{country.flag}</p>
+                <p className="flag-icon">{country.flag}</p>
             </Link>
         
         </div>

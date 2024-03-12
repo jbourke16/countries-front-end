@@ -41,7 +41,7 @@ function CountryEdit() {
     };
 
     return (
-        <div>
+        <div className="update-country">
             <h1>Update a Country in our Database!</h1>
 
             <form onSubmit={handleSubmit}>
