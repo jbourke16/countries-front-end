@@ -140,6 +140,10 @@ nav {
     margin-bottom: 40px;
 }
 
+.create-country-form button {
+    font-family: 'Viridian College', sans-serif;
+}
+
 .country-details {
     background-color: rgba(9,76,121,.5); 
     font-family: 'Viridian College', sans-serif;
@@ -176,3 +180,4 @@ nav {
 .edit-country-btn {
     font-family: 'Viridian College', sans-serif;
 }
+
