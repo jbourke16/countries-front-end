@@ -89,7 +89,7 @@ function CountryEdit() {
                 />
             </form>
 
-            <button type="submit">Edit Country</button>
+            <button className="edit-country-btn" type="submit">Edit Country</button>
 
         </div>
     )

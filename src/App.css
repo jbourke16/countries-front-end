@@ -41,6 +41,11 @@ nav {
     margin: 30px 0px;
 }
 
+.nav-menu {
+    background-color: rgba(9,76,121,.5); 
+    padding: 30px;
+}
+
 .homepage p {
     font-family: 'Viridian College', sans-serif;
     font-size: 15px;
@@ -72,17 +77,15 @@ nav {
     margin: auto;
 }
 
-
-.create-country-btn {
+.create-country-btn button {
     font-family: 'Viridian College', sans-serif;
-    font-size: 10px;
-    margin-top: 10px;
-    width: 250px;
     margin: auto;
+    margin-top: 20px;
+
 }
 
 .country-container {
-    width: 300px;
+    width: 400px;
     height: 300px;
     display: grid;
     align-content: center;
@@ -137,14 +140,39 @@ nav {
     margin-bottom: 40px;
 }
 
-.update-country {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: auto;
+.country-details {
+    background-color: rgba(9,76,121,.5); 
+    font-family: 'Viridian College', sans-serif;
+    padding: 30px;
+    color: white;
+}
+
+.edit-button {
+    font-family: 'Viridian College', sans-serif;
+}
+
+.delete-button {
+    font-family: 'Viridian College', sans-serif;
 }
 
 .update-country {
     background-color: rgba(9,76,121,.5); 
     padding: 30px;
+}
+
+.update-country form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    padding: 30px;
+}
+
+.update-country h1 {
+    font-family: 'Viridian College', sans-serif;
+    font-size: 24px;
+}
+
+.edit-country-btn {
+    font-family: 'Viridian College', sans-serif;
 }

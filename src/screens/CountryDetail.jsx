@@ -32,9 +32,9 @@ function CountryDetail() {
             <p>Language: {country.primaryLanguage}</p>
 
             <Link to={`/countries/${id}/edit`}>
-                <button>Edit</button>
+                <button className="edit-button">Edit</button>
             </Link>
-                <button onClick={handleDelete}>Delete</button>
+                <button className="delete-button" onClick={handleDelete}>Delete</button>
         </div>
     )
 }

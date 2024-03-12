@@ -34,6 +34,7 @@ function CountryCreate() {
     return (
         <div className ="create-country-form">
             <h1>Add a country to our Database!</h1>
+
             <form className="country-form" on Submit={handleSubmit}>
                 <input
                     type="text"
@@ -76,11 +77,13 @@ function CountryCreate() {
                     name="primaryLanguage"
                     value={country.primaryLanguage}
                     onChange={handleChange}
-                />
-                
+                />    
             </form>
 
-            <button className="create-country-btn" type="submit">Create Country</button>
+            <div className="create-country-btn">
+                <button type="submit">Create Country</button>
+            </div>
+
         </div>
 
     )
