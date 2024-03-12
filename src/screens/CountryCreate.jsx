@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createCountry } from '../services/countries.js';
 
-function CountryCreate() {
+function CountryCreate({fetchCountries}) {
     const [country, setCountry] = useState({
         name: "",
         capital: "",
@@ -18,6 +18,7 @@ function CountryCreate() {
         e.preventDefault();
 
         await createCountry(country);
+        fetchCountries()
         navigate('/countries');
     };
 
@@ -35,7 +36,7 @@ function CountryCreate() {
         <div className ="create-country-form">
             <h1>Add a country to our Database!</h1>
 
-            <form className="country-form" on Submit={handleSubmit}>
+            <form className="country-form" onSubmit={handleSubmit}>
                 <input
                     type="text"
                     placeholder="Add country here"
@@ -58,7 +59,7 @@ function CountryCreate() {
                     onChange={handleChange}
                 />
                 <input
-                    type="text"
+                    type="number"
                     placeholder="Population size"
                     name="population"
                     value={country.population}
@@ -77,12 +78,10 @@ function CountryCreate() {
                     name="primaryLanguage"
                     value={country.primaryLanguage}
                     onChange={handleChange}
-                />    
-            </form>
+                /> 
 
-            <div className="create-country-btn">
-                <button type="submit">Create Country</button>
-            </div>
+                  <button type="submit">Create Country</button>   
+            </form>
 
         </div>
 

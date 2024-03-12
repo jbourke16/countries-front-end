@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getCountry, editCountry } from '../services/countries.js';
 
-function CountryEdit() {
+function CountryEdit(props) {
     const [country, setCountry] = useState({
         name: "",
         capital: "",
@@ -11,11 +11,14 @@ function CountryEdit() {
         flag: "",
         primaryLanguage: "",
     });
+    let { id } = useParams();
+  
 
-    let { id } = useParams;
+    
     let navigate = useNavigate();
 
     async function fetchCountry() {
+        console.log(id)
         const oneCountry = await getCountry(id);
         setCountry(oneCountry);
     };
@@ -26,7 +29,6 @@ function CountryEdit() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         await editCountry(id, country);
         navigate(`/countries/${id}`);
     };
@@ -48,7 +50,7 @@ function CountryEdit() {
                 <input  
                     type="text"
                     placeholder="Edit country name"
-                    name="country"
+                    name="name"
                     value={country?.name}
                     onChange={handleChange}
                 />
@@ -87,9 +89,10 @@ function CountryEdit() {
                     value={country?.primaryLanguage}
                     onChange={handleChange}
                 />
+                            <button className="edit-country-btn" type="submit">Edit Country</button>
+
             </form>
 
-            <button className="edit-country-btn" type="submit">Edit Country</button>
 
         </div>
     )
