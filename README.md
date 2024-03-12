@@ -1,4 +1,4 @@
-# CountryDB
+# CountryDB!
 
 Welcome to CountryDB, the database that holds every country! Each country includes it's capital, region, population, flag and primary language.
 
@@ -27,4 +27,32 @@ To add a country:
 
 Here's an example below:
 
-<img src="" />
+<img src="CreateCountry.png" />
+
+Once you created your country, you should be able to search for it on the homepage or see it on the Countries page. Below is a screenshot of what would show up when you search for it.
+
+<img src="CountryAdded.png" />
+
+## Editing or Deleting a Country
+
+To edit a country, you can go to the Countries page or search for a country on the homepage. Once you've found your country, click on it. You will be redirected to a page with only that country.
+
+At the bottom of the country's information, you will see an Edit and Delete button.
+
+Click the edit button, and you will be redirected to an edit page:
+
+<img src="EditCountry.png" />
+
+To delete a country, you can navigate to to Countries page or search for a country on the homepage. Once you have found your country and click on it, you will be redirected to the details page. 
+
+<img src="DeleteCountry.png" />
+
+The "Delete" button will be on the bottom of the details. Click on it and the country will be deleted! 
+
+
+### Technology Used 
+
+<ul>
+    <li><a href="https://react.dev">React</a></li>
+    <li><a href="https://github.com/AleksandreChkhikvishvili/Back-end-Project">Countries API</a></li>
+</ul>
